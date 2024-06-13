@@ -10,7 +10,7 @@ public class EquipElements : MonoBehaviour
     public GameObject axe; 
     public Transform rightHand;
     GameObject candleInstance;
-    GameObject axeInstance;
+     GameObject axeInstance;
     public bool hasAxe = false;
     public bool hasLantren = false;
 
@@ -45,12 +45,12 @@ public class EquipElements : MonoBehaviour
     }
     public void EquipAxe()
     {
-        Debug.Log("enter");
-         Destroy(axe);
+         Debug.Log("enter");
+         DestroyImmediate(axe,true);
          axeInstance = Instantiate(AxePrefab,rightHand);
-         axeInstance.transform.localPosition = new Vector3(0.100000001f, -0.100000001f, 0);
-         axeInstance.transform.localRotation = Quaternion.Euler(new Vector3(331.089996f, 172.580032f, 95.0899963f));
-        hasAxe=true;
+         axeInstance.transform.localPosition = new Vector3(-0.148000002f, -0.0439999998f, -0.272000015f);
+         axeInstance.transform.localRotation = Quaternion.Euler(new Vector3(282.553467f, 334.502899f, 103.727348f));
+         hasAxe=true;
 
 
     }

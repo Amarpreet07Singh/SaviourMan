@@ -7,14 +7,19 @@ TagManager:
   - Laltern
   - LanternTrigger
   - AxeTrigger
+  - Axe
+  - RightHand
+  - Score
+  - Enemy
+  - BigEnemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SEnemy
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
